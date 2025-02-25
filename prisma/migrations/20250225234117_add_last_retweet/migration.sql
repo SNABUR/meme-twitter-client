@@ -1,0 +1,6 @@
+-- CreateTable
+CREATE TABLE "LastRetweet" (
+    "id" TEXT NOT NULL PRIMARY KEY,
+    "tweetId" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

@@ -14,3 +14,9 @@ model LastTweet {
   createdAt DateTime @default(now())
   tweetId   String?  // Opcional (si lo mantienes)
 }
+
+model LastRetweet {
+  id        String   @id @default(uuid())
+  tweetId   String
+  createdAt DateTime @default(now())
+}
