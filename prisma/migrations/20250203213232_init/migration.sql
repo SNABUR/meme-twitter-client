@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "LastTweet" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "tweetId" TEXT NOT NULL,
+    "newsTitle" TEXT NOT NULL,
+    "newsUrl" TEXT NOT NULL,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
