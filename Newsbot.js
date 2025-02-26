@@ -201,7 +201,7 @@ async function main() {
           console.log("🚨 Texto traducido vacío");
           return;
         }
-        const processedText = latestNews.text.replace(/(\b[A-Z]{3,5}\b)/g, '$$$1');
+        const processedText = latestNews.title.replace(/(\b[A-Z]{3,5}\b)/g, '$$$1');
         //const processedText = translated.text.replace(/(\b[A-Z]{3,5}\b)/g, '$$$1'); //translated to spanish
         const tweetContent = `📰 ${processedText}\n`;
         await scraper.sendTweet(tweetContent);
